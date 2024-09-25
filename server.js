@@ -12,7 +12,7 @@ import axios from "axios";
 
 import authRouter from "./Router/authRouter.js"
 
-configDotenv({path : "config/config.env"})
+configDotenv()
 const app = express() ;
 DBConnection();
 app.use(cors());
