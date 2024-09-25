@@ -47,6 +47,6 @@ app.get("/" , (res,req)=>{res.send("Hello")})
 app.use(globalError);
 
 
-app.listen(PORT ,async ()=>{
+app.listen(PORT,"0.0.0.0" ,async ()=>{
     console.log(`server is running on port ${PORT} ! `)
 })
