@@ -42,6 +42,7 @@ if(process.env.NODE_ENV == "development"){
 }  
 
 app.use("/api/auth" ,authRouter)
+app.get("/" , (res,req)=>{res.send("Hello")})
 //global error Middleware 
 app.use(globalError);
 
